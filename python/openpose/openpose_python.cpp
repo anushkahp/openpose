@@ -322,6 +322,7 @@ namespace op
 
         // Pose Mapping
         // Code example in doc/02_output.md, section Keypoint Ordering in C++/Python
+        m.def("get_keypoints_rectangle", &op::getKeypointsRectangle<float>, "Get Keypoints From Rectangle");
         m.def("getPoseBodyPartMapping", &getPoseBodyPartMapping, "getPoseBodyPartMapping");
         m.def("getPoseNumberBodyParts", &getPoseNumberBodyParts, "getPoseNumberBodyParts");
         m.def("getPosePartPairs", &getPosePartPairs, "getPosePartPairs");
